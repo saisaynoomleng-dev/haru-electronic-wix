@@ -1,3 +1,5 @@
+import Bounded from '@/components/Bounded';
+
 export default function Home() {
-    return;
+    return <Bounded className="min-h-screen"></Bounded>;
 }
