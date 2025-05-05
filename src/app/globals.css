@@ -114,11 +114,36 @@
     --sidebar-ring: oklch(0.556 0 0);
 }
 
+@theme {
+    /* colors */
+    --color-brand-blue: #1d74d7;
+    --color-brand-black-200: #000000;
+    --color-brand-white: #ffffff;
+    --color-brand-black-100: #4d4d4d;
+
+    /* font family */
+    --font-main: var(--font-main);
+
+    /* font sizes */
+    --text-fs-900: 4.5rem;
+    --text-fs-800: 3.125rem;
+    --text-fs-700: 2.875rem;
+    --text-fs-600: 2.125rem;
+    --text-fs-500: 1.55rem;
+    --text-fs-400: 1.125rem;
+    --text-fs-300: 1rem;
+    --text-fs-200: 0.875rem;
+
+    /* screens */
+    --breakpoint-lg: 1000px;
+    --breakpoint-md: 750px;
+}
+
 @layer base {
-    * {
-        @apply border-border outline-ring/50;
+    html {
+        @apply scroll-smooth;
     }
     body {
-        @apply bg-background text-foreground;
+        @apply bg-brand-white dark:bg-brand-black-200 text-black dark:text-brand-white min-h-dvh overflow-hidden tracking-normal leading-normal text-fs-400;
     }
 }
