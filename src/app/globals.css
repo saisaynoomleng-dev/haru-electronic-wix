@@ -117,9 +117,10 @@
 @theme {
   /* colors */
   --color-brand-blue: #1d74d7;
-  --color-brand-black-200: #000000;
-  --color-brand-white: #ffffff;
   --color-brand-black-100: #4d4d4d;
+  --color-brand-black-200: #3c3c3c;
+  --color-brand-black-900: #000000;
+  --color-brand-white: #ffffff;
 
   /* font family */
   --font-main: var(--font-main);
@@ -144,7 +145,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-brand-white dark:bg-brand-black-200 text-black dark:text-brand-white min-h-dvh overflow-x-hidden tracking-normal leading-normal text-fs-400 font-main;
+    @apply bg-brand-white dark:bg-brand-black-900 text-black dark:text-brand-white min-h-dvh overflow-x-hidden tracking-normal leading-normal text-fs-400 font-main;
   }
   p {
     @apply text-pretty;

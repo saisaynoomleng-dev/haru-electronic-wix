@@ -11,8 +11,8 @@ const buttonVariants = cva(
       variant: {
         default:
           'bg-brand-blue rounded-full cursor-pointer px-5 py-2 font-sembold hover:bg-brand-blue/80 text-brand-white',
-
         link: 'text-primary underline-offset-4 hover:underline',
+        switch: 'text-fs-200 cursor-pointer !p-0',
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',

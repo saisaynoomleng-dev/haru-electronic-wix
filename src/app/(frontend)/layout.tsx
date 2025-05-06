@@ -1,5 +1,7 @@
 import { SanityLive } from '@/sanity/lib/live';
 import '../globals.css';
+import Header from '@/components/Header';
+import { ThemeProvider } from 'next-themes';
 
 export default function RootLayout({
   children,
@@ -8,8 +10,16 @@ export default function RootLayout({
 }>) {
   return (
     <main>
-      {children}
-      <SanityLive />
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <Header />
+        {children}
+        <SanityLive />
+      </ThemeProvider>
     </main>
   );
 }
