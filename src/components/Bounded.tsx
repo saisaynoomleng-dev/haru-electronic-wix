@@ -10,7 +10,7 @@ const Bounded = ({
   return (
     <Comp
       className={clsx(
-        `space-y-5 md:space-y-10 m-0 p-0`,
+        `space-y-5 md:space-y-10`,
         variant === 'margin' && 'px-5 md:px-10',
         className,
       )}

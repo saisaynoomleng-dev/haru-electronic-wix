@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-brand-blue rounded-full cursor-pointer px-5 py-2 font-sembold hover:bg-brand-blue/80',
+          'bg-brand-blue rounded-full cursor-pointer px-5 py-2 font-sembold hover:bg-brand-blue/80 text-brand-white',
 
         link: 'text-primary underline-offset-4 hover:underline',
       },
