@@ -144,7 +144,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-brand-white dark:bg-brand-black-200 text-black dark:text-brand-white min-h-dvh overflow-hidden tracking-normal leading-normal text-fs-400 font-main;
+    @apply bg-brand-white dark:bg-brand-black-200 text-black dark:text-brand-white min-h-dvh overflow-x-hidden tracking-normal leading-normal text-fs-400 font-main;
   }
   p {
     @apply text-pretty;

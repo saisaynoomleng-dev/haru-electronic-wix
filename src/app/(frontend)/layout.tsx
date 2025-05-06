@@ -1,9 +1,15 @@
+import { SanityLive } from '@/sanity/lib/live';
 import '../globals.css';
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return <main>{children}</main>;
+  return (
+    <main>
+      {children}
+      <SanityLive />
+    </main>
+  );
 }

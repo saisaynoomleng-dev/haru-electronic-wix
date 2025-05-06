@@ -1,8 +1,7 @@
-import Image from 'next/image';
-import Bounded from './Bounded';
-import Titlte from './Title';
-import Title from './Title';
-import { Button } from './ui/button';
+import Link from 'next/link';
+import Bounded from '../Bounded';
+import Title from '../Title';
+import { Button } from '../ui/button';
 
 const Hero = () => {
   return (
@@ -17,7 +16,9 @@ const Hero = () => {
         Shop the top brand electronic
       </Title>
       <p>Get more for your money with every purchase!</p>
-      <Button>Shop Now</Button>
+      <Button>
+        <Link href="/products">Shop Now</Link>
+      </Button>
     </Bounded>
   );
 };
